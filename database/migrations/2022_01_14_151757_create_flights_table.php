@@ -20,6 +20,7 @@ class CreateFlightsTable extends Migration
             $table->string('departure');
             $table->date('arr_data')-> nullable();
             $table->string('arrival');
+            $table->float('price');
             $table->timestamps();
         });
     }
