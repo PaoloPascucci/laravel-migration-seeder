@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Blog;
+use Illuminate\Http\Request;
+
+class BlogController extends Controller
+{
+
+    public function news()
+    {
+        $blogs = Blog::all();
+        return view('packages.news', compact('blogs'));
+    }
+
+
+}

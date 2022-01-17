@@ -12,7 +12,4 @@ class FlightController extends Controller
         $flights = flight::all();
         return view('packages.index', compact('flights'));
     }
-    public function show(flight $news){
-        return view('packages.news',compact('news'));
-    }
 }

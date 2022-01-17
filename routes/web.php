@@ -16,5 +16,5 @@ route::get('/', function(){
     return view('home');
 })->name('home');
 
-Route::get('packages', 'FlightController@index')->name('packages');
-Route::get('packages/{news}, FlightController@show')->name('news');
+Route::get('/package/index', 'FlightController@index')->name('index');
+Route::get('/package/news', 'BlogController@news')->name('news');
