@@ -1,2 +1,1 @@
-require('./bootstrap');
-import 'bootstrap';
+window.bootstrap = require('bootstrap');

@@ -12,5 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+route::get('/', function(){
+    return view('home');
+})->name('home');
 
-Route::get('/', 'FlightController@index');
+Route::get('packages', 'FlightController@index')->name('packages');
+Route::get('packages/{news}, FlightController@show')->name('news');

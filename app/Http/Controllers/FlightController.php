@@ -10,6 +10,9 @@ class FlightController extends Controller
 
         // ddd(Movie::all()); 
         $flights = flight::all();
-        return view('home', compact('flights'));
+        return view('packages.index', compact('flights'));
+    }
+    public function show(flight $news){
+        return view('packages.news',compact('news'));
     }
 }
